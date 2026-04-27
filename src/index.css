@@ -1,4 +1,4 @@
-/* ── Tokens ──────────────────────────────────────────────────────────────── */
+/* Tokens */
 :root {
   --bg: #fdf8f2;
   --surface: #fff;
@@ -17,7 +17,7 @@
   --font-body: "Segoe UI", system-ui, sans-serif;
 }
 
-/* ── Reset ───────────────────────────────────────────────────────────────── */
+/* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -28,14 +28,14 @@ body {
   line-height: 1.5;
 }
 
-/* ── Layout ──────────────────────────────────────────────────────────────── */
+/* Layout */
 .app {
   max-width: 640px;
   margin: 0 auto;
   padding: 0 16px 48px;
 }
 
-/* ── Header ──────────────────────────────────────────────────────────────── */
+/* Header */
 .app-header {
   text-align: center;
   padding: 40px 0 32px;
@@ -57,7 +57,7 @@ body {
   margin-top: 4px;
 }
 
-/* ── Sections ────────────────────────────────────────────────────────────── */
+/* Sections */
 .app-main { display: flex; flex-direction: column; gap: 20px; }
 
 .form-section {
@@ -94,7 +94,7 @@ body {
   flex-shrink: 0;
 }
 
-/* ── Accommodation cards ─────────────────────────────────────────────────── */
+/* Accommodation cards */
 .accom-grid { display: flex; flex-direction: column; gap: 10px; }
 
 .accom-card {
@@ -136,7 +136,7 @@ body {
   font-weight: 700;
 }
 
-/* ── Date fields ─────────────────────────────────────────────────────────── */
+/* Date fields */
 .date-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -169,7 +169,7 @@ body {
   box-shadow: 0 0 0 3px var(--accent-light);
 }
 
-/* ── Adults control ──────────────────────────────────────────────────────── */
+/* Adults control */
 .adults-control {
   display: flex;
   align-items: center;
@@ -206,7 +206,7 @@ body {
   border-radius: 8px;
 }
 
-/* ── Actions ─────────────────────────────────────────────────────────────── */
+/* Actions */
 .actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
 .btn-calculate {
@@ -243,7 +243,7 @@ body {
 }
 .btn-reset:hover { background: var(--border); color: var(--text); }
 
-/* ── Spinner ─────────────────────────────────────────────────────────────── */
+/* Spinner */
 .spinner {
   width: 20px;
   height: 20px;
@@ -254,7 +254,7 @@ body {
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ── Error banner ────────────────────────────────────────────────────────── */
+/* Error banner */
 .error-banner {
   display: flex;
   align-items: flex-start;
@@ -270,7 +270,7 @@ body {
 }
 .error-icon { font-size: 1.1rem; flex-shrink: 0; }
 
-/* ── Result panel ────────────────────────────────────────────────────────── */
+/* Result panel */
 .result-panel {
   background: var(--surface);
   border: 1.5px solid var(--border);
@@ -309,7 +309,7 @@ body {
   margin: 8px 0;
 }
 
-/* ── Animation ───────────────────────────────────────────────────────────── */
+/* Animation */
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
